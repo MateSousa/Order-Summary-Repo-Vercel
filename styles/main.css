@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-size: 16px;
+}
+
+::root {
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --desaturatedBlue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+
+}
+    
+
+
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+}
+
+
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+
+/* HERO CSS  */
+
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: hsl(225, 100%, 98%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.order-summary {
+    margin-top: 100px;
+}
+
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+/*  CONTENT CSS  */
+
+.content-container {
+    border-radius: 20px;
+    width: 450px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+/* IMG CSS */
+
+
+.top-img img {
+    border-radius: 20px 20px 0 0;
+}
+
+/* DESCRIPTION CSS */
+
+.description-product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 35px;
+    width: 100%;
+}
+
+.description-product-container h1 {
+    font-size: 1.80rem;
+    font-weight: 900;
+}
+
+.description-product-container p {
+    padding-top: 15px;
+    font-size: 1.20rem;
+    font-weight: 500;
+    width: 65%;
+    opacity: 0.6;
+}
+
+
+/* PLAN CSS */
+
+.price-product-wrapper {
+    margin-top: 50px;
+    width: 350px;
+    height: 80px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: hsl(225, 100%, 98%);
+}
+
+
+.price-product-wrapper h1 {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.price-product-wrapper p {
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.link-to-another-plan a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+
+.link-to-another-plan a:hover {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+/* BUTTON CSS */
+
+.btn-container {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-to-proceed button {
+    background-color:hsl(245, 75%, 52%);
+    box-shadow:  0px 5px 5px 0px hsla(223, 47%, 23%, .5);
+    border-radius: 10px;
+    width: 380px;
+    height: 50px;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-to-proceed button:hover {
+    background-color: hsla(245, 75%, 52%, 0.8);
+}
+
+.btn-to-cancel button {
+    padding-top: 20px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    height: 50px;
+    outline: none;
+    border: none;
+    color: hsla(223, 47%, 23%, 0.6);
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-to-cancel button:hover {
+    color: hsla(223, 47%, 23%, 1);
+}
+
+/* FOOTER CSS */
+
+.attribution {
+    margin-top: 50px;
+}
+
+
+/* RESPONSIVE CSS */
+
+@media screen and (min-width: 768px) {
+    .description-product-container p {
+        width: 80%;
+    }
+}
